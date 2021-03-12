@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_weather"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textSize="50sp"
+        android:textColor="@color/default_color_text"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:id="@+id/tvLocation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hien tuong"
+        android:textSize="30sp"
+        android:textColor="@color/default_color_text"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/tvIconPhrase"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhiet do"
+        android:textSize="80sp"
+        android:textColor="@color/default_color_text"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvTemperature"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rvListTemperature"/>
+
+
+</LinearLayout>
